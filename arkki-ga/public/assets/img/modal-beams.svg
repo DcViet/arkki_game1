@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1930px" height="1930px" viewBox="0 0 1930 1930" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Untitled 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50.044%" cy="51.275%" fx="50.044%" fy="51.275%" r="48.461%" id="radialGradient-1">
+            <stop stop-color="#FDEE6E" offset="0%"></stop>
+            <stop stop-color="#FFEC3B" stop-opacity="0.57" offset="19.556%"></stop>
+            <stop stop-color="#FFEF67" stop-opacity="0.14" offset="58.161%"></stop>
+            <stop stop-color="#FFEF66" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="47.848%" gradientTransform="translate(0.500000,0.500000),scale(0.998693,1.000000),translate(-0.500000,-0.500000)" id="radialGradient-2">
+            <stop stop-color="#FFED4D" stop-opacity="0.87" offset="0%"></stop>
+            <stop stop-color="#FFEE53" stop-opacity="0.73" offset="15.451%"></stop>
+            <stop stop-color="#FFE500" stop-opacity="0.31" offset="34.68%"></stop>
+            <stop stop-color="#FFE500" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bg-beams" transform="translate(0.000000, 2.000000)" fill-rule="nonzero">
+            <circle id="Oval" fill="url(#radialGradient-1)" cx="965.5" cy="964.5" r="636.5"></circle>
+            <path d="M969.15984,967.852996 L1378.891,1838.046 L1245.538,1889.236 L967.524,967.63 L967.524,967.631 L966.886,966.275 L1037.687,1927.327 L894.847,1927.327 L965.607,966.837 L687.354,1889.237 L554,1838.047 L962.425652,970.627138 L415.764272,1757.56371 L304.755431,1667.67076 L963.882273,966.101941 L963.883139,966.101441 L964.73797,964.870051 L167.843523,1506.71238 L96.4230235,1383.00845 L963.611764,964.043405 L25.6634311,1184.26924 L3.3187715,1043.18715 L963.137119,962.815043 L0.0866558021,899.076259 L19.9656903,757.625693 L960.804322,961.272624 L960.803447,961.272139 L962.29874,961.371534 L87.4187154,557.368229 L156.668922,432.43755 L962.427275,959.980432 L290.577789,269.426481 L400.000874,177.609849 L963.520038,959.335331 L963.708952,959.52955 L554,89.382 L687.354,38.192 L965.367,959.797 L965.562,960.211 L894.846,0.325 L1037.688,0.325 L967.183,957.342 L1244.455,38.192 L1377.809,89.382 L967.36813,961.083933 L1517.70708,168.854652 L1628.71542,258.746738 L969.588716,960.317791 L969.326816,960.694166 L1765.25448,419.509313 L1836.67448,543.212382 L972.622675,960.660761 L1907.26592,741.210356 L1929.61108,882.293308 L975.120588,962.220182 L1929.41774,1025.37946 L1909.5391,1166.83139 L968.700952,963.183583 L968.244322,963.153423 L1842.06246,1366.6653 L1772.81128,1491.59773 L969.968604,965.962585 L1639.45069,1654.08378 L1530.02809,1745.89953 L969.15984,967.852996 Z" id="Combined-Shape" fill="url(#radialGradient-2)" opacity="0.3"></path>
+        </g>
+    </g>
+</svg>

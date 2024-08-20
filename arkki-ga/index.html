@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Codewards</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/assets/css/app.css" />
+    <link rel="shortcut icon" href="./favicon.png" />
+    <script src="https://yookassa.ru/checkout-widget/v1/checkout-widget.js"></script>
+  </head>
+
+  <body data-api-path="/api" data-env="production" data-version="1.9.53">
+    <div id="app">
+      <div class="application">
+        <div class="loader-wrapper" style="display: none">
+          <div class="loader"></div>
+        </div>
+
+        <div class="modal">
+          <div class="modal-mask" style="display: none">
+            <div class="modal-wrapper">
+              <div class="tablet-container">
+                <!---->
+                <div class="tablet-border">
+                  <a class="close"></a
+                  ><a class="home el-button b-16">Change module</a
+                  ><a class="prev"></a><a class="next"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal"><!----></div>
+        <div class="modal">
+          <div class="modal-mask" style="display: none">
+            <div class="modal-wrapper">
+              <div class="modal-container text-center">
+                <div class="modal-body"><p class="b-24 task-text"></p></div>
+                <div class="modal-footer"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid">
+          <div class="canvas-wrapper">
+            <!---->
+            <div class="variables-list" style="display: none">
+              <span></span>
+            </div>
+            <!---->
+            <div class="game-wrapper">
+              <div id="phaser-game">
+                <div class="game-tutorial-mask" style="display: none">
+                  <div class="game-tutorial" style="top: 0px; left: 0px">
+                    <div class="game-tutorial-card">
+                      <div class="game-tutorial-card-header">
+                        <img class="preview" />
+                        <div class="h1">
+                          <div class="title"></div>
+                          <div class="translate r-14">()</div>
+                        </div>
+                        <div class="close-button"></div>
+                      </div>
+                      <div class="game-tutorial-card-description r-14"></div>
+                      <div class="game-tutorial-card-small-images"></div>
+                      <button class="game-tutorial-card-next-button">
+                        Далее
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <canvas
+                  width="1024"
+                  height="1024"
+                  style="
+                    display: block;
+                    touch-action: auto;
+                    user-select: none;
+                    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                    width: 725px;
+                    height: 725px;
+                    cursor: default;
+                  "
+                ></canvas>
+              </div>
+            </div>
+            <div class="control-panel">
+              <button class="control-panel-button button-blink">
+                <div class="live-tutorial tutorial-control-panel">
+                  <h3 class="highlight-paragraph title"><span>Run</span></h3>
+                  <p class="highlight-paragraph description">
+                    <span>Initiating the program</span>
+                  </p>
+                  <div class="close-live-tutorials"></div>
+                </div>
+                <div class="button-icon">
+                  <div class="icon icon-play"></div>
+                </div>
+                <span class="b-24">Run</span></button
+              ><button class="control-panel-button">
+                <!---->
+                <div class="button-icon">
+                  <div class="icon icon-step-forward"></div>
+                </div>
+                <span class="b-24">Next step</span></button
+              ><button disabled="disabled" class="control-panel-button">
+                <!---->
+                <div class="button-icon">
+                  <div class="icon icon-stop"></div>
+                </div>
+                <span class="b-24">Stop</span></button
+              ><button
+                class="control-panel-button button-skip"
+                style="display: none"
+              >
+                <!---->
+                <div class="button-icon">
+                  <div class="icon icon-skip"></div>
+                </div>
+                <span class="b-24">Пропустить</span>
+              </button>
+            </div>
+          </div>
+          <div class="editor-wrapper has-user">
+            <div class="the-darkest-overlay-ever"></div>
+            <!---->
+            <div class="header-game">
+              <div class="buttons-wrapper">
+                <div class="button-achievements-wrapper text-center">
+                  <!----><button class="button-achievements">
+                    <i class="fa fa-map-marker"></i>
+                  </button>
+                </div>
+                <div class="button-achievements-wrapper text-center">
+                  <!---->
+                </div>
+              </div>
+              <div class="task-wrapper">
+                <span class="task b-16">Task 1</span>
+              </div>
+              <div class="buttons-wrapper wrapper-right">
+                <div class="menu-button-wrapper">
+                  <button slot="reference" class="menu-button">
+                    <span class="icon-bars"></span><span>Меnu</span
+                    ><span
+                      ><div
+                        role="tooltip"
+                        id="el-popover-1437"
+                        aria-hidden="true"
+                        class="el-popover el-popper button-popover"
+                        style="width: 200px; display: none"
+                      >
+                        <!---->
+                        <p class="b-16">Давай зайдем в МЕНЮ</p>
+                      </div>
+                      <span class="el-popover__reference-wrapper"></span
+                    ></span></button
+                  ><!---->
+                </div>
+                <div class="button-settings-wrapper text-center">
+                  <!----><button class="button-settings">
+                    <i class="fa fa-cog"></i></button
+                  ><!---->
+                </div>
+                <div class="user-menu-wrapper">
+                  <div class="button-settings text-center">
+                    <img
+                      src="https://media.codewards.ru/images/avatars/ico-avatar-trial-93x.png"
+                      class="profile-avatar"
+                    />
+                  </div>
+                  <!---->
+                </div>
+              </div>
+            </div>
+            <div class="pure-g editor">
+              <div class="pure-u-1 editor-header">
+                <div class="professor-wrapper">
+                  <div class="professor"><!----></div>
+                  <div class="task">
+                    <p class="highlight-paragraph r-24">
+                      <span>Run the program. Let's see what happens!</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pure-u-1 editor-body">
+                <!----><span
+                  ><div
+                    role="tooltip"
+                    id="el-popover-9988"
+                    aria-hidden="true"
+                    class="el-popover el-popper invisible-pop-over"
+                    tabindex="0"
+                    style="display: none"
+                  >
+                    <!----><!---->
+                  </div>
+                  <span class="el-popover__reference-wrapper"
+                    ><div
+                      id="ace-editor"
+                      class="ace-codewards-md ace_editor ace-codewards el-popover__reference ace_dark"
+                      aria-describedby="el-popover-9988"
+                      tabindex="0"
+                    >
+                      <textarea
+                        class="ace_text-input"
+                        wrap="off"
+                        autocorrect="off"
+                        autocapitalize="off"
+                        spellcheck="false"
+                        style="
+                          opacity: 0;
+                          height: 40px;
+                          width: 13.0004px;
+                          left: 90.0008px;
+                          top: 0px;
+                        "
+                      ></textarea>
+                      <div class="ace_gutter" aria-hidden="true">
+                        <div
+                          class="ace_layer ace_gutter-layer ace_folding-enabled"
+                          style="margin-top: 0px; height: 588px; width: 60px"
+                        >
+                          <div class="ace_gutter-cell" style="height: 40px">
+                            1
+                          </div>
+                        </div>
+                        <div
+                          class="ace_gutter-active-line"
+                          style="top: 0px; height: 40px"
+                        ></div>
+                      </div>
+                      <div
+                        class="ace_scroller"
+                        style="left: 60px; right: 0px; bottom: 0px"
+                      >
+                        <div
+                          class="ace_content"
+                          style="
+                            margin-top: 0px;
+                            width: 1079px;
+                            height: 588px;
+                            margin-left: 0px;
+                          "
+                        >
+                          <div class="ace_layer ace_print-margin-layer">
+                            <div
+                              class="ace_print-margin"
+                              style="left: 1044.03px; visibility: hidden"
+                            ></div>
+                          </div>
+                          <div class="ace_layer ace_marker-layer">
+                            <div
+                              class="ace_active-line"
+                              style="height: 40px; top: 0px; left: 0; right: 0"
+                            ></div>
+                          </div>
+                          <div
+                            class="ace_layer ace_text-layer"
+                            style="padding: 0px 4px"
+                          >
+                            <div class="ace_line" style="height: 40px">
+                              <span class="ace_variable ace_language"
+                                >robot</span
+                              ><span class="ace_keyword ace_operator">.</span
+                              ><span class="ace_support ace_function"
+                                >move</span
+                              >
+                              <span class="ace_constant ace_numeric">3</span>
+                            </div>
+                          </div>
+                          <div class="ace_layer ace_marker-layer"></div>
+                          <div
+                            class="ace_layer ace_cursor-layer ace_hidden-cursors"
+                          >
+                            <div
+                              class="ace_cursor"
+                              style="
+                                left: 30.0008px;
+                                top: 0px;
+                                width: 13.0004px;
+                                height: 40px;
+                              "
+                            ></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="ace_scrollbar ace_scrollbar-v"
+                        style="display: none; width: 20px; bottom: 0px"
+                      >
+                        <div
+                          class="ace_scrollbar-inner"
+                          style="width: 20px; height: 508px"
+                        ></div>
+                      </div>
+                      <div
+                        class="ace_scrollbar ace_scrollbar-h"
+                        style="
+                          display: none;
+                          height: 20px;
+                          left: 60px;
+                          right: 0px;
+                        "
+                      >
+                        <div
+                          class="ace_scrollbar-inner"
+                          style="height: 20px; width: 1079px"
+                        ></div>
+                      </div>
+                      <div
+                        style="
+                          height: auto;
+                          width: auto;
+                          top: 0px;
+                          left: 0px;
+                          visibility: hidden;
+                          position: absolute;
+                          white-space: pre;
+                          font: inherit;
+                          overflow: hidden;
+                        "
+                      >
+                        <div
+                          style="
+                            height: auto;
+                            width: auto;
+                            top: 0px;
+                            left: 0px;
+                            visibility: hidden;
+                            position: absolute;
+                            white-space: pre;
+                            font: inherit;
+                            overflow: visible;
+                          "
+                        ></div>
+                        <div
+                          style="
+                            height: auto;
+                            width: auto;
+                            top: 0px;
+                            left: 0px;
+                            visibility: hidden;
+                            position: absolute;
+                            white-space: pre;
+                            font-style: inherit;
+                            font-variant: inherit;
+                            font-stretch: inherit;
+                            font-size: inherit;
+                            line-height: inherit;
+                            font-family: inherit;
+                            font-optical-sizing: inherit;
+                            font-size-adjust: inherit;
+                            font-kerning: inherit;
+                            font-feature-settings: inherit;
+                            font-variation-settings: inherit;
+                            overflow: visible;
+                          "
+                        >
+                          XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+                        </div>
+                      </div>
+                    </div></span
+                  ></span
+                >
+                <div class="editor-overlay">
+                  <button
+                    class="button-delete-line transparent"
+                    style="margin-top: 33px"
+                  >
+                    <!---->
+                  </button>
+                  <div
+                    class="inactive-overlay"
+                    style="top: 0px; height: 30px; display: none"
+                  ></div>
+                  <div
+                    class="inactive-overlay"
+                    style="top: 70px; height: calc(100% - 70px); display: none"
+                  ></div>
+                  <div class="tooltip-stop" style="display: none">
+                    <span>Editing is unavailable at the moment!</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pure-u-1 editor-footer">
+                <div class="editor-tabs">
+                  <div class="buttons-level">
+                    <div class="button-wrapper">
+                      <button class="editor-button button-blue">
+                        <span>robot</span>
+                        <div class="icon icon-robot"></div></button
+                      ><!----><!---->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="modal"><!----></div>
+          <div class="modal">
+            <div class="modal-mask tutorial-slider-mask" style="display: none">
+              <div class="modal-overlay"></div>
+              <div class="modal-wrapper">
+                <div class="tablet-container tutorial-carousel">
+                  <!---->
+                  <div class="tablet-border tutorial-border">
+                    <a class="close"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal">
+            <div class="modal-mask" style="display: none">
+              <div class="modal-wrapper">
+                <div class="quiz-container text-center">
+                  <!----><!----><!----><!---->
+                </div>
+                <!---->
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          data-v-cdd1ea6e=""
+          class="el-dialog__wrapper success"
+          style="display: none"
+        >
+          <div
+            role="dialog"
+            aria-modal="true"
+            aria-label="Hooray! You’ve got a new achievement!"
+            class="el-dialog el-dialog--center"
+            style="margin-top: 15vh; width: 560px"
+          >
+            <div class="el-dialog__header">
+              <span class="el-dialog__title"
+                >Hooray! You’ve got a new achievement!</span
+              ><!---->
+            </div>
+            <!---->
+            <div class="el-dialog__footer">
+              <span data-v-cdd1ea6e="" class="dialog-footer"
+                ><button
+                  data-v-cdd1ea6e=""
+                  type="button"
+                  class="el-button dialog-button cancel el-button--primary"
+                >
+                  <!----><!----><span>OK</span>
+                </button></span
+              >
+            </div>
+          </div>
+        </div>
+        <!---->
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>

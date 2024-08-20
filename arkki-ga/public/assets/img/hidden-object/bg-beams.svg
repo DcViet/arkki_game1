@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="663px" height="663px" viewBox="0 0 663 663" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>4BEF469C-BE27-4CB1-AE96-C0CF4136576A</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <radialGradient cx="50.0442053%" cy="51.2745137%" fx="50.0442053%" fy="51.2745137%" r="46.1195939%" gradientTransform="translate(0.500442,0.512745),scale(0.999213,1.000000),rotate(88.761102),translate(-0.500442,-0.512745)" id="radialGradient-1">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.980755332" offset="10.0046244%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.832342618" offset="23.2282553%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.605185688" offset="44.3078789%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.137652853" offset="69.1201352%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="86.4190486%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+        <radialGradient cx="50%" cy="49.0167678%" fx="50%" fy="49.0167678%" r="98.9842758%" gradientTransform="translate(0.500000,0.490168),scale(1.000000,0.428407),rotate(90.000000),translate(-0.500000,-0.490168)" id="radialGradient-2">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.73" offset="15.4512884%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.31" offset="63.0479198%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="01.10.2018-hidden_object" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1336-768-hidden_object-found-detail" transform="translate(-337.000000, -105.000000)">
+            <g id="pic/pic-hidden-object-location" transform="translate(244.000000, 44.000000)">
+                <g id="Group-8" transform="translate(93.000000, 61.000000)">
+                    <g id="bg/bg-beams" transform="translate(-93.000000, -61.000000)">
+                        <g transform="translate(-129.985618, -161.641598)">
+                            <ellipse id="Oval-2" fill="url(#radialGradient-1)" cx="554.781879" cy="554.345176" rx="554.781879" ry="554.345176"></ellipse>
+                            <path d="M555.714567,554.532594 L556.191864,556.11515 L555.764307,555.207235 L584.604245,946.367336 L526.399527,946.367336 L555.250596,555.056253 L441.906488,930.866951 L387.567702,910.008246 L555.038698,554.384072 L555.170642,553.946588 L387.567702,198.042231 L441.906488,177.183525 L555.241681,552.964665 L555.233166,552.849171 L554.957551,551.935326 L555.204443,552.459601 L526.399527,161.774494 L584.604245,161.774494 L555.857638,551.668744 L668.801983,177.183525 L723.140768,198.042231 L555.721263,553.557066 L723.581713,910.008246 L669.242928,930.866951 L555.706051,554.4171 L555.714567,554.532594 Z" id="Combined-Shape" fill="url(#radialGradient-2)"></path>
+                            <path d="M555.793059,554.303954 L556.270356,555.88651 L555.8428,554.978595 L584.682737,946.138696 L526.478019,946.138696 L555.329088,554.827613 L441.98498,930.638311 L387.646195,909.779606 L555.11719,554.155432 L555.249135,553.717948 L387.646195,197.813591 L441.98498,176.954885 L555.320173,552.736025 L555.311658,552.620531 L555.036043,551.706686 L555.282935,552.230961 L526.478019,161.545854 L584.682737,161.545854 L555.93613,551.440104 L668.880475,176.954885 L723.21926,197.813591 L555.799755,553.328426 L723.660205,909.779606 L669.32142,930.638311 L555.784544,554.18846 L555.793059,554.303954 Z" id="Combined-Shape" fill="url(#radialGradient-2)" transform="translate(555.653200, 553.842275) rotate(60.000000) translate(-555.653200, -553.842275) "></path>
+                            <path d="M554.984379,553.859644 L555.461677,555.4422 L555.03412,554.534285 L583.874057,945.694386 L525.669339,945.694386 L554.520408,554.383304 L441.1763,930.194001 L386.837515,909.335296 L554.30851,553.711122 L554.440455,553.273639 L386.837515,197.369281 L441.1763,176.510576 L554.511494,552.291715 L554.502978,552.176222 L554.227364,551.262377 L554.474256,551.786651 L525.669339,161.101544 L583.874057,161.101544 L555.12745,550.995794 L668.071795,176.510576 L722.41058,197.369281 L554.991075,552.884116 L722.851525,909.335296 L668.51274,930.194001 L554.975864,553.74415 L554.984379,553.859644 Z" id="Combined-Shape" fill="url(#radialGradient-2)" transform="translate(554.844520, 553.397965) rotate(119.000000) translate(-554.844520, -553.397965) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
